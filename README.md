@@ -133,7 +133,7 @@ choco list -lo
 mkdir build_vs && cd build_vs
 ```
 
-Depending where you installed MSYS2(Ex: C:\msys2) enter the following command:
+Depending where you installed MSYS2(Ex: C:\msys64) enter the following command:
 
 ```sh
 cmake .. -DCMAKE_BUILD_TYPE=Release -Wno-dev -DNO_CUDA=FALSE -DJANSSON_LIBRARIES="c:\msys64\mingw64\lib\libjansson.dll.a" -DCURL_LIBRARY="c:\msys64\mingw64\lib\libcurl.dll.a" -DGMP_LIBRARIES="c:\msys64\mingw64\lib\libgmp.dll.a" -DOpenCL_LIBRARY="C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/lib/x64/OpenCL.lib" -G "Visual Studio 16 2019" -A x64
